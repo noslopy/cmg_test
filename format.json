@@ -1,0 +1,30 @@
+[
+    {
+        "type":         "thermometer",
+        "measure_unit": "temperature",
+        "unit_stored":  "decimal",
+        "classification": {
+            "ultra precise": ["mean 0.5", "sd 3"],
+            "very precise":  ["mean 0.5", "sd 5"],
+            "precise":       []
+        }
+    },
+    {
+        "type":         "humidity",
+        "measure_unit": "humidity",
+        "unit_stored":  "decimal",
+        "classification": {
+            "keep":     ["within 1"],
+            "discard":  []
+        }
+    },
+    {
+        "type":         "monoxide",
+        "measure_unit": "CO",
+        "unit_stored":  "whole",
+        "classification": {
+            "keep":     ["within 3"],
+            "discard":  []
+        }
+    }
+]
